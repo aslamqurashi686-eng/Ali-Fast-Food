@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b5121b">
+  <meta name="description" content="Ali Restaurant Fast Food — Good Food, Happy Mood. Discover delicious burgers, pizza, fries and more.">
+
+  <title>Ali Restaurant Fast Food | Good Food, Happy Mood</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    <span>GOOD FOOD</span>
+    <i class="fa-solid fa-circle"></i>
+    <span>HAPPY MOOD</span>
+    <i class="fa-solid fa-circle"></i>
+    <span>MADE WITH LOVE</span>
+  </div>
+
+  <header class="header" id="header">
+    
+<a href="#home" class="brand">
+ <div class="logo-container">
+    <img src="ali.png" alt="Ali Restaurant Logo" class="logo">
+
+    <h3 class="logo-text">Restaurant</h3>
+</div>
+</a>
+
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#menu" class="nav-link">Our Menu</a>
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#offers" class="nav-link">Special Offers</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#menu" class="nav-order"><i class="fa-solid fa-burger"></i> Order Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SLIDER -->
+    <section class="hero" id="home">
+      <div class="hero-slides">
+        <div class="hero-slide active">
+          <img src="header1.jpg" alt="Fresh juicy gourmet burger" fetchpriority="high">
+        </div>
+        <div class="hero-slide">
+          <img src="header2.jpg" alt="Delicious crispy fast food">
+        </div>
+        <div class="hero-slide">
+          <img src="header3.jpg" alt="Freshly baked pizza">
+        </div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow"><i class="fa-solid fa-fire-flame-curved"></i> FRESH • HOT • DELICIOUS</span>
+        <h1 id="heroTitle">GOOD FOOD.<br><span>HAPPY MOOD.</span></h1>
+        <p id="heroDescription">Big flavours, fresh ingredients and the kind of food that makes every bite memorable.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">EXPLORE OUR MENU <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#about" class="btn btn-outline"><i class="fa-regular fa-circle-play"></i> OUR STORY</a>
+        </div>
+        <div class="hero-note"><i class="fa-solid fa-heart"></i> Made fresh. Served happy.</div>
+      </div>
+
+      <div class="hero-counter"><span id="slideNumber">01</span><span class="counter-line"></span><span>03</span></div>
+      <div class="slider-controls">
+        <button id="prevSlide" aria-label="Previous slide"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="nextSlide" aria-label="Next slide"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+      <a href="#menu" class="scroll-cue"><span></span> SCROLL TO DISCOVER</a>
+    </section>
+
+    <!-- BRAND STRIP -->
+    <section class="values-strip">
+      <div><i class="fa-solid fa-leaf"></i><span>FRESH INGREDIENTS</span></div>
+      <i class="value-separator"></i>
+      <div><i class="fa-solid fa-fire-burner"></i><span>MADE FRESH</span></div>
+      <i class="value-separator"></i>
+      <div><i class="fa-solid fa-face-smile"></i><span>HAPPY MOMENTS</span></div>
+      <i class="value-separator"></i>
+      <div><i class="fa-solid fa-heart"></i><span>MADE WITH LOVE</span></div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu-section" id="menu">
+      <div class="section-heading reveal">
+        <span class="section-tag">CRAVINGS? WE'VE GOT YOU.</span>
+        <h2>THE MENU <span>YOU'LL LOVE.</span></h2>
+        <p>Fresh flavours, satisfying bites and something delicious for everyone.</p>
+      </div>
+
+      <div class="category-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Items</button>
+        <button class="filter-btn" data-filter="burgers">Burgers</button>
+        <button class="filter-btn" data-filter="pizza">Pizza</button>
+        <button class="filter-btn" data-filter="sides">Sides</button>
+        <button class="filter-btn" data-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="food-card reveal" data-category="burgers">
+          <div class="food-image">
+            <span class="food-badge">FAVOURITE</span>
+            <img src="clasic.jpg" alt="Classic beef burger" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">SIGNATURE BURGER</span>
+            <h3>Classic Burger</h3>
+            <p>Juicy patty, fresh lettuce, cheese and our special sauce.</p>
+            <div class="food-bottom"><strong>Rs. 650</strong><button class="order-item" data-item="Classic Burger" aria-label="Order Classic Burger"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <article class="food-card reveal" data-category="burgers">
+          <div class="food-image">
+            <span class="food-badge spicy">SPICY</span>
+            <img src="crispy.jpg" alt="Crispy chicken burger" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">CHICKEN SPECIAL</span>
+            <h3>Crispy Chicken Burger</h3>
+            <p>Crispy chicken, creamy sauce and a fresh toasted bun.</p>
+            <div class="food-bottom"><strong>Rs. 550</strong><button class="order-item" data-item="Crispy Chicken Burger" aria-label="Order Crispy Chicken Burger"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+        <!-- NEW BURGER 1: DOUBLE SMASH BURGER -->
+        <article class="food-card reveal" data-category="burgers">
+          <div class="food-image">
+            <span class="food-badge">BEST SELLER</span>
+            <img src="smash.jpg" alt="Double smash burger" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">BEEF SPECIAL</span>
+            <h3>Double Smash Burger</h3>
+            <p>Two juicy beef patties, melted cheese and our signature sauce.</p>
+            <div class="food-bottom"><strong>Rs. 750</strong><button class="order-item" data-item="Double Smash Burger" aria-label="Order Double Smash Burger"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW BURGER 2: ZINGER SUPREME -->
+        <article class="food-card reveal" data-category="burgers">
+          <div class="food-image">
+            <span class="food-badge spicy">CRISPY</span>
+            <img src="zinger.jpg" alt="Crispy zinger supreme burger" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">CHICKEN SPECIAL</span>
+            <h3>Zinger Supreme</h3>
+            <p>Crispy chicken fillet, fresh lettuce and creamy mayonnaise.</p>
+            <div class="food-bottom"><strong>Rs. 450</strong><button class="order-item" data-item="Zinger Supreme" aria-label="Order Zinger Supreme"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW BURGER 3: BBQ CHICKEN BURGER -->
+        <article class="food-card reveal" data-category="burgers">
+          <div class="food-image">
+            <img src="BBQ.jpg" alt="BBQ chicken burger" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">BBQ SPECIAL</span>
+            <h3>BBQ Chicken Burger</h3>
+            <p>Smoky BBQ sauce, tender chicken, cheese and a toasted bun.</p>
+            <div class="food-bottom"><strong>Rs. 500</strong><button class="order-item" data-item="BBQ Chicken Burger" aria-label="Order BBQ Chicken Burger"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+        <article class="food-card reveal" data-category="pizza">
+          <div class="food-image">
+            <img src="pizza.jpg" alt="Cheesy pizza" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">OVEN FRESH</span>
+            <h3>Special Pizza</h3>
+            <p>Melty cheese, rich sauce and delicious toppings in every bite.</p>
+            <div class="food-bottom"><strong>Rs. 1,200</strong><button class="order-item" data-item="Special Pizza" aria-label="Order Special Pizza"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+                <!-- NEW PIZZA 1: PEPPERONI PIZZA -->
+        <article class="food-card reveal" data-category="pizza">
+          <div class="food-image">
+            <span class="food-badge">BEST SELLER</span>
+            <img src="Pepperoni.jpg" alt="Pepperoni pizza" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">ITALIAN SPECIAL</span>
+            <h3>Pepperoni Pizza</h3>
+            <p>Rich tomato sauce, melted mozzarella and flavourful pepperoni.</p>
+            <div class="food-bottom"><strong>Rs. 1,400</strong><button class="order-item" data-item="Pepperoni Pizza" aria-label="Order Pepperoni Pizza"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW PIZZA 2: CHICKEN TIKKA PIZZA -->
+        <article class="food-card reveal" data-category="pizza">
+          <div class="food-image">
+            <span class="food-badge spicy">SPICY</span>
+            <img src="Tikka Pizza.jpg" alt="Chicken tikka pizza" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">PAKISTANI FAVOURITE</span>
+            <h3>Chicken Tikka Pizza</h3>
+            <p>Spiced chicken tikka, creamy cheese, capsicum and special sauce.</p>
+            <div class="food-bottom"><strong>Rs. 1,300</strong><button class="order-item" data-item="Chicken Tikka Pizza" aria-label="Order Chicken Tikka Pizza"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW PIZZA 3: CREAMY FAJITA PIZZA -->
+        <article class="food-card reveal" data-category="pizza">
+          <div class="food-image">
+            <img src="Fajita Pizza.jpg" alt="Creamy chicken fajita pizza" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">CREAMY SPECIAL</span>
+            <h3>Creamy Fajita Pizza</h3>
+            <p>Tender chicken, creamy sauce, mozzarella and fresh vegetables.</p>
+            <div class="food-bottom"><strong>Rs. 1,350</strong><button class="order-item" data-item="Creamy Fajita Pizza" aria-label="Order Creamy Fajita Pizza"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <article class="food-card reveal" data-category="sides">
+          <div class="food-image">
+            <img src="Loaded Fries.jpg" alt="Golden crispy fries" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">CRUNCHY & GOLDEN</span>
+            <h3>Loaded Fries</h3>
+            <p>Golden crispy fries with a delicious savoury topping.</p>
+            <div class="food-bottom"><strong>Rs. 350</strong><button class="order-item" data-item="Loaded Fries" aria-label="Order Loaded Fries"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <article class="food-card reveal" data-category="sides">
+          <div class="food-image">
+            <img src="Crispy Chicken.jpg" alt="Crispy chicken bites" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">CRISPY BITES</span>
+            <h3>Crispy Chicken</h3>
+            <p>Crunchy outside, tender inside and full of flavour.</p>
+            <div class="food-bottom"><strong>Rs. 700</strong><button class="order-item" data-item="Crispy Chicken" aria-label="Order Crispy Chicken"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+                <!-- NEW SIDE 1: LOADED CHEESE FRIES -->
+        <article class="food-card reveal" data-category="sides">
+          <div class="food-image">
+            <span class="food-badge">BEST SELLER</span>
+            <img src="LOADED CHEESE FRIES.jpg" alt="Loaded cheese fries" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">CHEESY & CRISPY</span>
+            <h3>Loaded Cheese Fries</h3>
+            <p>Golden crispy fries topped with creamy cheese sauce and seasoning.</p>
+            <div class="food-bottom"><strong>Rs. 450</strong><button class="order-item" data-item="Loaded Cheese Fries" aria-label="Order Loaded Cheese Fries"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW SIDE 2: CHICKEN NUGGETS -->
+        <article class="food-card reveal" data-category="sides">
+          <div class="food-image">
+            <span class="food-badge spicy">CRUNCHY</span>
+            <img src="CHICKEN NUGGETS.jpg" alt="Crispy chicken nuggets" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">CRISPY BITES</span>
+            <h3>Chicken Nuggets</h3>
+            <p>Golden crunchy chicken bites served with a delicious dipping sauce.</p>
+            <div class="food-bottom"><strong>Rs. 400</strong><button class="order-item" data-item="Chicken Nuggets" aria-label="Order Chicken Nuggets"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW SIDE 3: ONION RINGS -->
+        <article class="food-card reveal" data-category="sides">
+          <div class="food-image">
+            <img src="ONION RINGS.jpg" alt="Crispy onion rings" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">GOLDEN & CRUNCHY</span>
+            <h3>Crispy Onion Rings</h3>
+            <p>Lightly battered onion rings, fried until golden and crispy.</p>
+            <div class="food-bottom"><strong>Rs. 300</strong><button class="order-item" data-item="Crispy Onion Rings" aria-label="Order Crispy Onion Rings"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <article class="food-card reveal" data-category="drinks">
+          <div class="food-image">
+            <img src="Chilled Drinks.jpg" alt="Refreshing cold drink" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">SIP & REFRESH</span>
+            <h3>Chilled Drinks</h3>
+            <p>A refreshing chilled drink to complete your meal.</p>
+            <div class="food-bottom"><strong>Rs. 180</strong><button class="order-item" data-item="Chilled Drinks" aria-label="Order Chilled Drinks"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+                <!-- NEW DRINK 1: CHOCOLATE MILKSHAKE -->
+        <article class="food-card reveal" data-category="drinks">
+          <div class="food-image">
+            <span class="food-badge">BEST SELLER</span>
+            <img src="Chocolate Milkshake.jpg" alt="Chocolate milkshake" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">THICK & CREAMY</span>
+            <h3>Chocolate Milkshake</h3>
+            <p>Rich chocolate blended with creamy milk for a delicious treat.</p>
+            <div class="food-bottom"><strong>Rs. 350</strong><button class="order-item" data-item="Chocolate Milkshake" aria-label="Order Chocolate Milkshake"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW DRINK 2: FRESH LIME -->
+        <article class="food-card reveal" data-category="drinks">
+          <div class="food-image">
+            <span class="food-badge">REFRESHING</span>
+            <img src="lime.jpg" alt="Fresh lime drink" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">FRESH & COOL</span>
+            <h3>Fresh Lime</h3>
+            <p>A refreshing citrus drink with a zesty lime flavour.</p>
+            <div class="food-bottom"><strong>Rs. 200</strong><button class="order-item" data-item="Fresh Lime" aria-label="Order Fresh Lime"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+
+        <!-- NEW DRINK 3: OREO MILKSHAKE -->
+        <article class="food-card reveal" data-category="drinks">
+          <div class="food-image">
+            <img src="Oreo Milkshake.jpg" alt="Oreo milkshake" loading="lazy">
+          </div>
+          <div class="food-info">
+            <span class="food-category">SIGNATURE SHAKE</span>
+            <h3>Oreo Milkshake</h3>
+            <p>Creamy vanilla milkshake blended with chocolate cookie pieces.</p>
+            <div class="food-bottom"><strong>Rs. 400</strong><button class="order-item" data-item="Oreo Milkshake" aria-label="Order Oreo Milkshake"><i class="fa-brands fa-whatsapp"></i> Order</button></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="price-note">Sample menu and prices — update these to match the restaurant's actual menu.</p>
+    </section>
+
+    <!-- PROMO -->
+    <section class="promo-section" id="offers">
+      <div class="promo-image">
+        <img src="header4.jpg" alt="Delicious burger meal" loading="lazy">
+      </div>
+      <div class="promo-content reveal">
+        <span class="section-tag light-tag"><i class="fa-solid fa-star"></i> GOOD TIMES, GREAT BITES</span>
+        <h2>YOUR NEXT<br>FAVOURITE BITE<br><span>IS WAITING.</span></h2>
+        <p>Gather your friends, bring your appetite and let the good food do the talking.</p>
+        <a href="#menu" class="btn btn-light">FIND YOUR FAVOURITE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="promo-decoration">YUM!</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="about-image reveal">
+        <img src="about1.jpg" alt="Welcoming restaurant interior" loading="lazy">
+        <div class="about-stamp"><i class="fa-solid fa-heart"></i><span>GOOD FOOD</span><b>HAPPY MOOD</b></div>
+      </div>
+      <div class="about-content reveal">
+        <span class="section-tag">A LITTLE ABOUT US</span>
+        <h2>FOOD THAT BRINGS<br>PEOPLE <span>TOGETHER.</span></h2>
+        <p>At Ali Restaurant Fast Food, we believe good food makes ordinary moments special. From satisfying burgers to delicious sides, we're here to make your cravings worth it.</p>
+        <p>Come hungry. Leave happy.</p>
+        <a href="#contact" class="text-link">GET IN TOUCH <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="contact-inner reveal">
+        <span class="section-tag light-tag">LET'S MAKE YOU HUNGRY</span>
+        <h2>READY TO <span>ORDER?</span></h2>
+        <p>Your next delicious meal is just a message away.</p>
+        <button class="btn btn-light" id="contactOrder"><i class="fa-brands fa-whatsapp"></i> ORDER ON WHATSAPP</button>
+        <small>Replace the demo WhatsApp number in script.js before publishing.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="brand footer-brand">
+      <span class="brand-icon"><i class="fa-solid fa-utensils"></i></span>
+      <span class="brand-name">ALI <b>RESTAURANT</b><small>GOOD FOOD · HAPPY MOOD</small></span>
+    </a>
+    <p>Good Food. Happy Mood. Made with love.</p>
+    <a href="#home" class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    <div class="footer-bottom">© <span id="year"></span> Ali Restaurant Fast Food. All rights reserved.</div>
+  </footer>
+</body>
+</html>
